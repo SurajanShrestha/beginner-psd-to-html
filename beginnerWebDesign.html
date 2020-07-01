@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Web Design</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100%;
+            height: 360px;
+            background-color: #7bc144;
+            /*position: fixed;
+            top: 0px;
+            left: 0px;
+            padding: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;*/
+            padding: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-content{
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        .header-content h1{
+            margin: 30px 0px;
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .header-content h5{
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            height: 60px;
+            background-color: #3b6a26;
+            /*position: fixed;
+            width: 100%;
+            margin-top: 480px;
+            display: flex;
+            justify-content: space-evenly;
+            z-index: 1;*/
+            display: flex;
+            justify-content: space-evenly;
+        }
+        nav a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 5px;
+        }
+        nav a:hover{
+            background-color: #325920;
+        }
+
+        main{
+        }
+        .banner-img img{
+            width: 100%;
+            height: auto;
+        }
+        .content-home{
+            color: #3b6a26;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-home h2{
+            font-size: 36px;
+            margin: 0;
+        }
+        .content-home p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 30px 0px;
+            text-align: center;
+        }
+        .content-home button{
+            background-color: #7bc144;
+            width: 180px;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        .content-home button a{
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        .content-home button:hover{
+            background-color: #325920;
+        }
+        .content-home img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer{
+            background-color: #5e6d66;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .copyright h2{
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+        }
+        .footer-icons{
+            margin-right: 30px;
+        }
+        .footer-icons img{
+            width: 50px;
+            height: auto;
+        }
+
+        @media(max-width: 600px){
+            .copyright h2{
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+            .footer-icons img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./logo.png">
+            <h1>Surajan Shrestha</h1>
+            <h5>MY LEARNING PORTFOLIO</h5>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <div class="banner-img">
+            <img src="./banner-home.jpg">
+        </div>
+        <div class="content-home">
+            <h2>I AM LEARNING WEB DESIGN</h2>
+            <p>I am currently learning how to build websites and while I may lack in experience I make up with knowledge.Here is my first website built from scratch in HTML5 and CSS3. I hope you like it and you can:</p>
+            <button type="button">
+                <a href="#">Hire me, I'm Cheap.</a>
+            </button>
+            <img src="./portfolio.jpg">
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <h2>&#169;Surajan Shrestha, New Baneshwor, Kathmandu</h2>
+        </div>
+        <div class="footer-icons">
+            <img src="./icon-google-plus.png">
+            <img src="./icon-facebook.png">
+        </div>
+    </footer>
+</body>
+</html>
